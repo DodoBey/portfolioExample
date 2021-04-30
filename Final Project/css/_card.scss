@@ -1,0 +1,51 @@
+
+.card{
+    background: white;
+    border-radius: $borderRadius;
+    box-shadow: 0px 5px 5px 5px rgba($secondaryBackgroundcolor, 0.1);
+    transition: 0.2s;
+    width: 100%;
+    
+    
+    
+    h3{
+        background-color: $mainBackgroundcolor;
+        color: $mainTextcolor;
+        border-radius: 1rem 1rem 0 0;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    ul li{
+        padding: 0px 3px;
+    }
+    p{
+        padding: 0px 5px;
+        color: $secondaryTextcolor;
+    }
+}
+
+.cards{
+    padding: 10px;
+    display: block;
+    
+}
+
+.card:nth-child(1){
+    margin-top: 4rem;
+    z-index: 1;
+}
+.card:nth-child(2){
+    margin-top: -13.9rem;
+    z-index: 2;
+
+}
+.card:not(:last-child):hover,
+.card:not(:last-child):focus-within{
+    transform: translateY(-2rem);
+    cursor: pointer;
+    ~ .card{
+        transform: translateY(5rem);
+    }
+}
+

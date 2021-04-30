@@ -1,0 +1,221 @@
+
+body.colorful{
+    background-color: $secondaryBackgroundcolor;
+}
+
+.title.colorful{
+    color: $colorfulMain;
+    border-bottom: $mainBorderstyle $colorfulMain;
+}
+
+//HEADER//
+
+.information.colorful {
+    // img {
+    //     -webkit-filter: grayscale(0%);
+    //     filter: grayscale(0%);
+    // }
+
+    video{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+.toggle.colorful{
+    background-color: $secondaryBackgroundcolor;
+    border: $mainBorderstyle $colorfulSecondary;
+    &:before{
+        background-color: $colorfulSecondary;
+    }
+}
+
+.ham-bar.colorful{
+    background-color: $colorfulSecondary; 
+}
+
+#hamButton{
+    display: none;
+    &:checked{
+        &+ .ham-button-label{
+            left: 235px;
+            top: 95%;
+            transition: 0.4s ease, left 0.4s 0.4s ease;
+            & .hambar{
+                transition: 0.4s ease, width 0.3s ease;
+                &:nth-child(1){
+                    width: 0;
+                }
+                &:nth-child(4){
+                    width: 0;
+                }
+                &:nth-child(2){
+                    transform: translateX(-50%) rotate(45deg);
+                }
+                &:nth-child(3){
+                    transform: translateX(-50%) rotate(-45deg);
+                }
+            }
+        }
+        &~ .off-screen-container.colorful{
+            left: 0;
+            transition: 0.4s ease, left 0.4s 0.4s ease;
+            background-color: $secondaryBackgroundcolor;
+            box-shadow: 0 0 24px 1px rgba(0,0,0,0.4);
+            & .side-block{
+                left: 0;
+                &:nth-child(1){
+                    transition: 0.4s ease, left 0.4s 0.45s ease, border 0.2s ease;
+                }
+                &:nth-child(2){
+                    transition: 0.4s ease, left 0.4s 0.55s ease, border 0.2s ease;
+                }
+                &:nth-child(3){
+                    transition: 0.4s ease, left 0.4s 0.61s ease, border 0.2s ease;
+                }
+                &:nth-child(4){
+                    transition: 0.4s ease, left 0.4s 0.67s ease, border 0.2s ease;
+                }
+                &:nth-child(5){
+                    transition: 0.4s ease, left 0.4s 0.35s ease, border 0.2s ease;
+                    display: none;
+                }
+
+            }
+        }
+    }
+}
+
+.side-block.colorful{
+        background-color: $colorfulThird;
+    a{
+        color: $colorfulSecondary;
+        &:hover{
+            color: $colorfulMain;
+        }
+    }
+    &:before{
+        content: "";
+        transition: 0.25s ease;
+        background: linear-gradient(to left, $colorfulMain 50%, $colorfulSecondary 50%);
+        background-size: 200% 100%;
+        background-position: left;
+    }
+    &:hover::before{
+        background-position: right;
+    }
+}
+
+.toggleTitleon.colorful{
+    display: none;
+}
+
+.toggleTitleoff.colorful{
+    display: inline-block;
+    color: $colorfulSecondary;
+}
+
+//CONTACT ME//
+
+.contactForm.colorful{
+    textarea{
+        background-color: $colorfulThird;
+        color: $colorfulSecondary;
+        border: $mainBorderstyle $colorfulSecondary;
+        &::placeholder{
+        color: $colorfulSecondary;
+        }
+    }
+
+    input{
+        background-color: $colorfulThird;
+        color: $colorfulSecondary;
+        border: $mainBorderstyle $colorfulSecondary;
+        &::placeholder{
+            color: $colorfulSecondary;
+            }
+        &:last-child{
+            color: $colorfulSecondary;
+        }
+        &:last-child:hover{
+            color: $colorfulMain;
+        }
+    }
+
+}
+
+//FOOTER//
+
+footer.colorful{
+    background-color: $colorfulThird;
+    .footerElements{
+        color: $mainTextcolor;
+        a{
+            color: $mainTextcolor;
+            &:hover{
+                color: $colorfulSecondary;
+            }
+        }
+
+        
+    }
+}
+
+.card.colorful{
+    background: $colorfulMain;
+    box-shadow: 0px 5px 5px 5px rgba($colorfulSecondary, 0.1);
+      
+    h3{
+        background-color: $secondaryBackgroundcolor;
+        color: $secondaryTextcolor;
+    }
+
+    p{
+        color: $secondaryTextcolor;
+    }
+}
+
+//ABOUT ME//
+
+.personalPicture.colorful{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.gallery__img.colorful{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+#carouselExperiences.colorful{
+    img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    }
+}
+
+.information.colorful {
+    img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+//PORTFOLIO//
+
+.portfolioImg.colorful{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.overlay.colorful{
+    span{
+        color: $colorfulMain;
+    }
+}
+
+.gallery.colorful{
+    figcaption{
+        color: $colorfulMain;
+    }
+}
