@@ -1,6 +1,10 @@
 # portfolioExample
 It's a final project of my WMAD Prep. part.
 
+**You can check the page on http://dogukanyigiter.com/ 
+(Hosting based in Turkey, you need to wait a little bit longer the get real reasult.)**
+
+
 I created this page to implement the features that I learned in class. 
 
 # Built with:
@@ -21,3 +25,4 @@ I created this page to implement the features that I learned in class.
 - Create better design
 - Add auto hide to navbar
 
+:red_circle: Can not upload the video file because of the gitHub limitation.
