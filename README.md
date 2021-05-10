@@ -25,4 +25,4 @@ I created this page to implement the features that I learned in class.
 - Create better design
 - Add auto hide to navbar
 
-:red_circle: Can not upload the video file because of the gitHub limitation.
+:red_circle: Cannot upload the video file because of the gitHub limitation.
